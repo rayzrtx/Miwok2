@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is the layout for each individual view that contains two text views(Miwok word and default
+language word) and is shown for each activity-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/tan_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+        android:id="@+id/text_container"
+        android:layout_toRightOf="@id/list_item_icon">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="bottom"
+            tools:text="lutti"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/english_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/miwok_text_view"
+            android:gravity="top"
+            android:layout_marginLeft="16dp"
+            tools:text="one"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
